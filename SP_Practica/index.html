@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo Segundo Parcial - TS</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="node_modules/toastr/build/toastr.min.js"></script>
+</head>
+
+<body>
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="#">Active</a>
+        <a class="nav-item nav-link" href="#">Link</a>
+        <a class="nav-item nav-link" href="#">Link</a>
+        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </nav>
+    <div class="container">
+        <div class="row elementos">
+            <div class="col">
+                <h1>Alta Empleado</h1>
+                <hr>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" class="form-control" id="edad">
+                </div>
+                <div class="form-group">
+                    <label for="legajo">Legajo:</label>
+                    <input type="text" class="form-control" id="legajo">
+                </div>
+                <div class="form-group">
+                    <label for="turno">Turno:</label>
+                    <select class="form-control" id="turno">
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                </div>
+                <button id="btnCancelar" class="btn btn-danger">
+                    <i class="fas fa-times"></i>
+                    Cancelar
+                </button>
+                <button id="btnAgregar" class="btn btn-success">
+                    <i class="far fa-save"></i>
+                    Agregar
+                </button>
+            </div>
+            <div class="col">
+                <table class="table table-dark table-hover" id="empleadosTabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                            <th>Legajo</th>
+                            <th>Turno</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
